@@ -27,18 +27,17 @@ def find_and_relink_textures(*args):
     # Debug output to ensure function is being called
     print("Find and Relink Textures button clicked")
 
-    # Use fileDialog2 to select directories
-    directories = cmds.fileDialog2(dialogStyle=2, fileMode=3, okCaption="Select Folder",
-                                   caption="Select Correct Texture Folders", multipleSelection=True)
+    # Use fileDialog to select a directory
+    directory = cmds.fileDialog2(dialogStyle=2, fileMode=3, okCaption="Select Folder",
+                                 caption="Select Correct Texture Folder")
 
-    # Debug output to see what directories were selected
-    print(f"Directories selected: {directories}")
+    # Debug output to see what directory was selected
+    print(f"Directory selected: {directory}")
 
-    if directories:
-        texture_relinker.find_and_relink_textures(directories)
+    if directory:
+        texture_relinker.find_and_relink_textures(directory)
     else:
         cmds.warning("No directories selected.")
 
 show_ui()
 
-show_ui()
