@@ -53,5 +53,5 @@ The Texture Relinker Tool is designed to find and re-link missing textures in a 
 1. Open your Maya scene with missing textures.
 2. Load and run the `texture_relinker_ui.py` script to open the Texture Relinker UI.
 3. Click the "Find and Relink Textures" button.
-4. Select the directories where your textures are located.
+4. Select the directori where your textures are located.
 5. The tool will automatically find and re-link the missing textures.
